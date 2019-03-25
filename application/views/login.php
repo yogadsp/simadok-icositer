@@ -48,7 +48,7 @@ id="urlskrg1">
                       success:function (pesan) {
                       	  if(pesan == 'sukses'){ //data diambil dari data yang di echo kan
                       	  	alert('success');
-                      	  	window.location = urlskrg;
+                      	  	window.location = '<?php echo base_url(); ?>home';
                       	  }
                       	  else if (pesan == 'salah_id') 
                       	  {
