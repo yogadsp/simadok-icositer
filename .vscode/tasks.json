@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "/property:GenerateFullPaths=true",
+                "/t:build"
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        }
+    ],
+
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "Open in Firefox",     
+            "isBuildCommand": true,
+            "command": "Firefox",
+            "windows": {
+                "command": "C:/Program Files/Mozilla Firefox/firefox.exe"
+            },
+            "args": [
+                "http://localhost:5000/${relativeFile}"
+            ]
+        },
+    ]
+}
