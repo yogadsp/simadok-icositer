@@ -9,6 +9,7 @@ body, html {
     padding: 40px 40px;
 }
 
+
 .btn {
     font-weight: 700;
     height: 36px;
@@ -44,7 +45,6 @@ body, html {
     border-radius: 50%;
 }
 
-
 .profile-name-card {
     font-size: 16px;
     font-weight: bold;
@@ -69,13 +69,16 @@ body, html {
 }
 
 .form-signin #inputEmail,
-.form-signin #inputPassword
+.form-signin #inputPassword,
+.form-signin #inputName,
+.form-signin #inputTelp
  {
     direction: ltr;
     height: 44px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
+.form-signin input[type=tel],
 .form-signin input[type=email],
 .form-signin input[type=password],
 .form-signin input[type=text],
@@ -130,3 +133,4 @@ body, html {
 .forgot-password:focus{
     color: rgb(32, 71, 199);
 }
+
