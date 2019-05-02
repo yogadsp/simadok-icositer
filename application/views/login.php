@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
+  <title></title>
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+
+  <!-- login -->
+  <!-- penutup -->
+
 </head>
+
 <body>
-    <form id="frm_login" method="post">
-    <input type="hidden" name="urlskrg" value="<?php echo current_url();?>" 
-id="urlskrg1">
-        <label for="user">Username : </label><input type="text" id="user1" name="user">
-        <br>
-        <label for="pass">Password : </label><input type="password" id="pass1" name="pass">
-        <input type="submit" value="Login">
+  <!-- Just an image -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <img src="<?php echo base_url();?>assets/img/icositer.png" class="img-responsive">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: brown;" href="#">Galeri</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: brown;" href="#">Login</a></b>
+      </li>
+    </ul>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-color: brown;">
+      <button  class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit" style="border-color: brown; color: brown; background-color: #DEB887;" >Search</button>
     </form>
-</body>
-</html>
+  </div>
+</nav>
+
+<!-- login -->
+<div class="login-form">
+    <form id="frm_login" method="post">
+        <input type="hidden" name="urlskrg" value="<?php echo current_url();?>" id="urlskrg1">
+    <div class="avatar">
+      <img src="<?php echo base_url();?>assets/img/user.png" alt="Avatar">
+    </div>
+        <h2 class="text-center">Editor Login</h2>   
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Masukkan Username ..." id="user1" 
+          name="user" required="required">
+        </div>
+    <div class="form-group">
+          <input type="password" class="form-control" placeholder="Masukkan Password ..." id="pass1" 
+          name="pass" required="required">
+        </div>        
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign In">
+        </div>
+    <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+        </div>
+    </form>
+</div>
+
+
+<!-- penutup login -->
+<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
 <script>
       $(document).ready(function() {
@@ -38,7 +87,7 @@ id="urlskrg1">
               } else {
                   $.ajax({
                       type:"post",
-                      url:'<?php echo base_url(); ?>/C_Login/aksi_login',
+                      url:'<?php echo base_url(); ?>Login/aksi_login',
                       data: {
                         user: user2,
                         pass: pass2,
@@ -71,3 +120,6 @@ id="urlskrg1">
           });
       });
   </script>
+
+</body>
+</html>

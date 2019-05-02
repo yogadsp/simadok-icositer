@@ -1,0 +1,11 @@
+C:\xampp\htdocs\simadok-icositer\bin\Debug\netcoreapp2.2\simadok-icositer.deps.json
+C:\xampp\htdocs\simadok-icositer\bin\Debug\netcoreapp2.2\simadok-icositer.runtimeconfig.json
+C:\xampp\htdocs\simadok-icositer\bin\Debug\netcoreapp2.2\simadok-icositer.runtimeconfig.dev.json
+C:\xampp\htdocs\simadok-icositer\bin\Debug\netcoreapp2.2\simadok-icositer.dll
+C:\xampp\htdocs\simadok-icositer\bin\Debug\netcoreapp2.2\simadok-icositer.pdb
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.csprojAssemblyReference.cache
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.AssemblyInfoInputs.cache
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.AssemblyInfo.cs
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.dll
+C:\xampp\htdocs\simadok-icositer\obj\Debug\netcoreapp2.2\simadok-icositer.pdb
