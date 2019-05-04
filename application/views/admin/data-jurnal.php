@@ -34,6 +34,8 @@
                 <a href="<?php echo current_url();?>/tampilIOP" class="btn btn-secondary">IOP</a>
                 <a href="<?php echo current_url();?>/tampilSBSN" class="btn btn-secondary">SBSN </a>
             </div>
+
+            <div class="table-responsive-xl">
                     <table class="table table-sm" id="contoh">
                     <thead class="kepala">
                         <tr>
@@ -76,6 +78,7 @@
                     <?php } ?>
                     </tbody>
                     </table>
+                </div>
             </div>
         </div>
 
