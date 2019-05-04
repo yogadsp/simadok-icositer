@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
 </head>
 <body>
+    <?php $this->load->view('admin/header_adit'); ?>
 
     <center>
         <h2>DATA JURNAL</h2>
