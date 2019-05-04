@@ -7,8 +7,6 @@ class data_jurnal extends CI_Controller {
 	{	
 		$this->load->model('M_pusatData');
 		$isi['pusat_data'] = $this->M_pusatData->tampilPusatData();
-		$this->load->model('M_bidang');
-		$isi['bidang'] = $this->M_bidang->tampilBidang();
 
         $this->load->view('admin/data-jurnal', $isi);
 	}

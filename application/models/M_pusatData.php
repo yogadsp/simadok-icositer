@@ -23,14 +23,12 @@ class M_pusatData extends CI_model{
 
         public function tampilPusatData(){
             $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, user.id_user, dokumen, status, id_pusat, tgl_input
+                        sub_bidang.nama_subbidang, id_user, dokumen, status, id_pusat, tgl_input
                         FROM pusat_data 
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
-                        NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran";
+                        NATURAL JOIN bid_subbid";
             $data = $this->db->query($query);
             
             return $data;
@@ -40,14 +38,13 @@ class M_pusatData extends CI_model{
         
         public function tampilDataJSAT(){
             $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, user.id_user, dokumen, status, id_pusat
+                        sub_bidang.nama_subbidang, id_user, dokumen, status, id_pusat
                         FROM pusat_data
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran WHERE bidang.nama_bidang='JSAT'";
+                        WHERE bidang.nama_bidang='JSAT'";
             $data = $this->db->query($query);
             
             return $data;
@@ -55,14 +52,13 @@ class M_pusatData extends CI_model{
 
         public function tampilDataIOP(){
             $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, user.id_user, dokumen, status, id_pusat
+                        sub_bidang.nama_subbidang, id_user, dokumen, status, id_pusat
                         FROM pusat_data
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran WHERE bidang.nama_bidang='IOP'";
+                        WHERE bidang.nama_bidang='IOP'";
             $data = $this->db->query($query);
             
             return $data;
@@ -70,44 +66,27 @@ class M_pusatData extends CI_model{
 
         public function tampilDataSBSN(){
             $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, user.id_user, dokumen, status, id_pusat
+                        sub_bidang.nama_subbidang, id_user, dokumen, status, id_pusat
                         FROM pusat_data
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran WHERE bidang.nama_bidang='sbsn'";
+                        WHERE bidang.nama_bidang='sbsn'";
             $data = $this->db->query($query);
             
             return $data;
         }
 
-        public function tampilDataPerBidang($idBidang){
-            $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, user.id_user, dokumen, status, id_pusat, tgl_input
-                        FROM pusat_data
-                        NATURAL JOIN bidang
-                        NATURAL JOIN sub_bidang
-                        NATURAL JOIN jurnal
-                        NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran WHERE bidang.id_bidang='$idBidang'";
-            $data = $this->db->query($query);
-
-            return $data->result_array();
-        }
-
         public function cariId($id_pusat){
             $query  =   "SELECT nama_penulis, jurnal.judul_jurnal, afiliasi, email, bidang.nama_bidang, 
-                        sub_bidang.nama_subbidang, sub_bidang.id_subbidang, user.id_user, dokumen, status, bidang.id_bidang,
+                        sub_bidang.nama_subbidang, sub_bidang.id_subbidang, id_user, dokumen, status, bidang.id_bidang,
                         id_pusat, jurnal.id_jurnal FROM pusat_data
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        NATURAL JOIN user
-                        NATURAL JOIN peran WHERE id_pusat='$id_pusat'";
+                        WHERE id_pusat='$id_pusat'";
             
             $data = $this->db->query($query);
 

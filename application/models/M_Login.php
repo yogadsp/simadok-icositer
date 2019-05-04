@@ -9,11 +9,22 @@ class M_Login extends CI_model{
 		$query = $this->db->get('user');
 		if($query->num_rows()>0)
 		{
-			echo "sukses";
 			foreach ($query->result() as $row) {
 				$sess = array(	'id_user'	=> $row->id_user,
-							  	'pass' 		=> $row->pass);
+								'pass' 		=> $row->pass,
+								'id_peran'	=> $row->id_peran
+							);
+				$id_peran = $row->id_peran;
+				
 				$this->session->set_userdata($sess); 
+
+				if($id_peran == '1') {
+					echo "admin";
+				} else if($id_peran == '2') {
+					echo "editor";
+				} else if($id_peran == '3') {
+					echo "user";
+				}
 			}
 		}
 		else

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Form Jurnal</title>
+    <title>Data Jurnal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 </head>
 <body>
+
+<?php $this->load->view('admin/header_adit'); ?>
 <?php include("konversi_tanggal.php"); ?>
 
     <center>
@@ -50,7 +53,7 @@
                         <th scope="col">Aksi</th>
                         </tr>
                     </thead>
-                    <tbody id="isi-tabel">
+                    <tbody>
                     <?php 
                         $no = 1;
                         foreach($pusat_data->result() as $row) { ?>
@@ -68,7 +71,6 @@
                             <td><a href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank">Download</a></td>
                             <td>
                                 <a href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em;">Edit</a>
-                            
                             
                             <a href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
                             </td>

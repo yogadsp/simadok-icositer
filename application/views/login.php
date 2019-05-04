@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Login</title>
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 
@@ -11,34 +11,7 @@
 </head>
 
 <body>
-  <!-- Just an image -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <img src="<?php echo base_url();?>assets/img/icositer.png" class="img-responsive">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="#">Galeri</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="#">Login</a></b>
-      </li>
-    </ul>
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-color: brown;">
-      <button  class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit" style="border-color: brown; color: brown; background-color: #DEB887;" >Search</button>
-    </form>
-  </div>
-</nav>
+<?php $this->load->view('header_user'); ?>
 
 <!-- login -->
 <div class="login-form">
@@ -47,20 +20,17 @@
     <div class="avatar">
       <img src="<?php echo base_url();?>assets/img/user.png" alt="Avatar">
     </div>
-        <h2 class="text-center">Editor Login</h2>   
+        <h2 class="text-center">Login</h2>   
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Masukkan Username ..." id="user1" 
+          <input type="text" class="form-control" placeholder="Username" id="user1" 
           name="user" required="required">
         </div>
     <div class="form-group">
-          <input type="password" class="form-control" placeholder="Masukkan Password ..." id="pass1" 
+          <input type="password" class="form-control" placeholder="Password" id="pass1" 
           name="pass" required="required">
         </div>        
         <div class="form-group">
             <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign In">
-        </div>
-    <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
         </div>
     </form>
 </div>
@@ -76,8 +46,10 @@
               var user2 = $("#user1").val();
               var pass2 = $("#pass1").val();
               var urlskrg2 = $("#urlskrg1").val();
+
+              var url_adit = '<?php echo base_url() ?>data_jurnal';
               
-              var urlskrg = '<?php echo current_url();?>';
+              var url_home = '<?php echo base_url();?>';
               if (pass2 == '' && user2 == '') {
               	  alert("Username & Password kosong");
               } else if (user2 == '' && pass2 != '') {
@@ -95,17 +67,19 @@
                       },
                       dataType: 'html',
                       success:function (pesan) {
-                      	  if(pesan == 'sukses'){ //data diambil dari data yang di echo kan
+                      	  if(pesan == 'user'){ //data diambil dari data yang di echo kan
                       	  	alert('success');
-                      	  	window.location = '<?php echo base_url(); ?>home';
+                      	  	window.location = url_home;
                       	  }
-                      	  else if (pesan == 'salah_id') 
+                          else if (pesan == 'admin') 
                       	  {
-                      	  	alert('Username Salah');
+                            alert('success');
+                      	  	window.location = url_adit;
                       	  }
-                      	  else if (pesan == 'salah_pass')
+                          else if (pesan == 'editor') 
                       	  {
-                      	  	alert('Password Salah');
+                            alert('success');
+                      	  	window.location = url_adit;
                       	  }
                       	  else if (pesan == 'salah_semua') {
                       	  	alert("Username atau Password Salah");

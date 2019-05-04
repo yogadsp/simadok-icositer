@@ -20,7 +20,16 @@ class Login extends CI_Controller {
 	 */
 	public function index()
 	{	
-		$this->load->view('login');
+		$id_user = $this->session->userdata('id_user');
+		if(empty($id_user)){
+			$this->load->view('login');
+		} else {
+			echo '<script>alert("Anda sudah login!");
+			window.history.back();;
+					</script>';
+		}
+
+		
 	}
 
 	public function aksi_login()

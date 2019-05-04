@@ -27,10 +27,10 @@
             <br>
 
             <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="<?php echo base_url();?>home/data_jurnal" class="btn btn-secondary">Tampil Semua</a>
-                <a href="<?php echo base_url();?>home/data_jurnal/tampilJSAT" class="btn btn-secondary">JSAT</a>
+                <a href="<?php echo base_url();?>data_jurnal" class="btn btn-secondary">Tampil Semua</a>
+                <a href="<?php echo base_url();?>data_jurnal/tampilJSAT" class="btn btn-secondary">JSAT</a>
                 <a href="<?php echo current_url();?>" class="btn btn-secondary active">IOP</a>
-                <a href="<?php echo base_url();?>home/data_jurnal/tampilSBSN" class="btn btn-secondary">SBSN</a>
+                <a href="<?php echo base_url();?>data_jurnal/tampilSBSN" class="btn btn-secondary">SBSN</a>
             </div>
                     <table class="table table-striped" id="contoh">
                     <thead class="kepala">

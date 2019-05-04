@@ -10,7 +10,7 @@
 <body>
   <!-- Just an image -->
 <nav class="navbar navbar-expand-lg navbar-light">
-  <img src="<?php echo base_url();?>assets/img/icositer.png" class="img-responsive">
+  <img src="<?php echo base_url();?>assets/img/icositerr.png" class="img-responsive" width="570" height="140">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,15 +20,15 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <b><a class="nav-link" style="color: brown;" href="#">Dokumen <span class="sr-only">(current)</span></a>
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="#">Tambah Galeri</a>
+        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>galeri">Galeri</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>home/tambah_user">Editor</a>
+        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>tentang">Tentang</a></b>
       </li>
       <?php $id_user = $this->session->userdata('id_user'); ?>
 
@@ -46,8 +46,7 @@
         </li>
       <?php 
         } ?>
-      
-      
+
     </ul>
     </form>
   </div>
