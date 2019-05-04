@@ -19,4 +19,11 @@ class M_galeri extends CI_model{
 
         $this->db->insert('galeri', $data1);
     }
+
+    public function editData($id_galeri){
+        $query = "SELECT * FROM galeri WHERE id_galeri='$id_galeri'";
+        $data = $this->db->query($query);
+
+        return $data->row();
+    }
 }

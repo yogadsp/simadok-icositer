@@ -12,28 +12,40 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>pos_galeri">Galeri</a>
+        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>data_jurnal">Jurnal</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>tentang">Tentang</a></b>
+        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>data_galeri">Galeri</a></b>
       </li>
+      <?php $id_peran = $this->session->userdata('id_peran'); ?>
+
+      <?php 
+        if($id_peran == '1') {
+      ?>
+      <li class="nav-item">
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>data_user">User</a></b>
+      </li>
+      <?php
+        }
+      ?>
+
       <?php $id_user = $this->session->userdata('id_user'); ?>
 
       <?php 
         if($id_user != '') {
       ?>  
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out">Logout</a></b>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out">Logout</a>
         </li>
       <?php
         } else {
       ?>
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login">Login</a></b>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login">Login</a>
         </li>
       <?php 
         } ?>

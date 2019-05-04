@@ -30,6 +30,18 @@
       <li class="nav-item">
         <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>tentang">Tentang</a></b>
       </li>
+      <?php $id_peran = $this->session->userdata('id_peran'); ?>
+
+      <?php 
+        if($id_peran == '2' || $id_peran == '1'){
+      ?> 
+      <li class="nav-item">
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>data_jurnal">Editor</a></b>
+      </li>
+      <?php
+        }
+      ?>
+      
       <?php $id_user = $this->session->userdata('id_user'); ?>
 
       <?php 
