@@ -36,7 +36,7 @@
             </div>
 
             <div class="table-responsive-xl">
-                    <table class="table table-sm" id="contoh">
+                    <table class="table table-sm table-bordered" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>
