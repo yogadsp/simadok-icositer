@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<form action="<?php echo base_url('data_jurnal/updateGaleri') ?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo base_url('data_galeri/updateGaleri') ?>" method="post" enctype="multipart/form-data">
         <center>
-            <h3>FORM JURNAL</h3>
+            <h3>EDIT GALERI</h3>
 
             <!-- untuk mendapatkan id_user dari session -->
             <?php $id_user = $this->session->userdata('id_user'); ?>
@@ -23,17 +23,21 @@
 
             <p>
                 <label>Tanggal    </label>
-                    <input type="date" name="tgl_input" id="tgl_input" size="100" value ="<?php echo $galeri->tgl_input; ?>" required>
+                <!-- strtotime digunakan untuk mengubah format tanggal, waktu, dll -->
+                    <input type="date" name="tgl_galeri" id="tgl_galeri" value ="<?php echo date('Y-m-d',strtotime($galeri->tgl_galeri)) ?>" required>
+                    
             </p>
             <p>
                 <label>Keterangan    </label>
                     <input type="text" name="ket" id="ket" size="40" value ="<?php echo $galeri->keterangan; ?>" required>
             </p>
             <p>
-                <img src="<?php echo base_url("upload/galeri/$row->gambar"); ?>" alt="" width="80%">
+                <label>Foto Sekarang
+                <img src="<?php echo base_url("upload/galeri/$galeri->gambar"); ?>" alt="" width="80%">
+                </label>
             </p>
             <p>
-                <label>Upload Foto    </label>
+                <label>Upload Foto Baru    </label>
                     <input type="file" name="gambar" id="gambar">
             </p>
             <input type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">

@@ -9,11 +9,6 @@
 </head>
 <body>
     <?php $this->load->view('header_user'); ?>
-    <p>Ini halaman home</p>
-
-    <?php $id_user = $this->session->userdata('id_user'); ?>
-
-    <p> <?php echo $id_user ?> </p>
 
     <?php include("admin/konversi_tanggal.php"); ?>
 

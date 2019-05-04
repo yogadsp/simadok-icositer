@@ -22,10 +22,9 @@
     <center>
         <h2>DATA JURNAL</h2>
     </center>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-
+        <div class="row" style="margin: 0 20px 0 20px;">
+            <div class="col-md-12">
+            
             <a href="<?php echo current_url();?>/form_jurnal" class="btn btn-primary">Tambah Jurnal</a>
             <br>
 
@@ -35,8 +34,7 @@
                 <a href="<?php echo current_url();?>/tampilIOP" class="btn btn-secondary">IOP</a>
                 <a href="<?php echo current_url();?>/tampilSBSN" class="btn btn-secondary">SBSN </a>
             </div>
-            
-                    <table class="table table-striped" id="contoh">
+                    <table class="table table-sm" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>
@@ -79,7 +77,6 @@
                     </tbody>
                     </table>
             </div>
-            <div class="col-md-1"></div>
         </div>
 
     <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>

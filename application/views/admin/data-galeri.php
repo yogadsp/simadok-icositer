@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/tabell.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
 
             <a href="<?php echo current_url();?>/pos_galeri" class="btn btn-primary">Tambah Galeri</a>
             
-                    <table class="table table-striped" id="contoh">
+                    <table class="table table-striped table-sm" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>

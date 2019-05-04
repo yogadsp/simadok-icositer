@@ -88,6 +88,9 @@ class data_jurnal extends CI_Controller {
 			$data1 = array('upload_data' => $this->upload->data());
 			$dokumen = $data1['upload_data']['file_name'];
 			$data['dokumen']	= $dokumen;
+
+			$dok_lama = $this->M_pusatData->cariDokumen($id_pusat);
+			unlink(".upload/jurnal/".$dok_lama);
 		} else {
 			$data['dokumen']	= $this->M_pusatData->cariDokumen($id_pusat);
 		}
