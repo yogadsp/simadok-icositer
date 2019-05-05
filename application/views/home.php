@@ -12,9 +12,23 @@
 
     <?php include("admin/konversi_tanggal.php"); ?>
 
-    <center>
-        <h2>DATA JURNAL</h2>
-    </center>
+    <div class="col-md-12" style="padding-bottom: 190px;">
+    <p style="text-align:justify;"  "><img src="<?php echo base_url();?>assets/img/tabel.png" style="float:right; width: 500px;" />
+            <br>
+            <br>
+            <br>
+            <h1>ICOSITER</h1>
+            <h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h6>Konferensi internasional yang menghadirkan tokoh</h6>
+            <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
+            <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>
+            <h6>Institut Teknologi Sumatera</h6>        
+    </p>
+    </div>
+
+
+<!-- data  jurnal -->
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
