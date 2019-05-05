@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class form_jurnal extends CI_Controller {
+	// untuk mengecek apakah sudah login atau sesuai dengan perannya
+    public function __construct(){
+        parent::__construct();
+		$this->load->model('Cek_login');
+		
+		$this->Cek_login->login_editor();
+	}
 
 	public function index()
 	{	

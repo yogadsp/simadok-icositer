@@ -2,6 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class data_galeri extends CI_Controller {
+	// untuk mengecek apakah sudah login atau sesuai dengan perannya
+	public function __construct(){
+        parent::__construct();
+		$this->load->model('Cek_login');
+		
+		$this->Cek_login->login_editor();
+	}
+	
     public function index(){
         $this->load->model('M_galeri');
         $isi['galeri'] = $this->M_galeri->tampilDataGaleri();
