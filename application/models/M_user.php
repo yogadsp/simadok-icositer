@@ -50,59 +50,51 @@ class M_user extends CI_model{
 	}
 
 	public function updateData($data){
-		$id_user = $data['user'];
-		$id_peran = $data['peran'];
-		// $kondisi = array('id_user' => $id_user, 'id_peran' => $id_peran);
+		$id_user = $data['user_lama'];
+		$id_peran = $data['peran_lama'];
+		$kondisi = array('id_user' => $id_user, 'id_peran' => $id_peran);
+		
+		$this->db->select('pass');
+		$this->db->where($kondisi);
+		$lama_pass = $this->db->get('user');
 
-		// $this->db->where($kondisi);
-		// $query = $this->db->get('user');
+		$cek_dbl = array('id_user' => $data['user'], 'id_peran' => $data['peran'], 'pass' => $data['pass']);
+		$this->db->where($cek_dbl);
+		$query = $this->db->get('user');
 
-		// if($query->num_rows()>0)
-		// {
-		// 	echo "<script> alert('Username sudah ada!'); </script>";
-		// }
-		// else
-		// {
-			// $dataa = $query->row_array();
+		if($query->num_rows()>0)
+		{
+			echo "<script> alert('Username sudah ada!'); </script>";
+		}
+		else
+		{
+			$dataa = $lama_pass->row_array();
 
-			$pwd = $data['pass'];
-			// if($dataa['pass'] == $data['pass']){
-			// 	$pwd = $data['pass'];
-			// } else {
-			// 	$pwd = md5($data['pass']);
-			// }
+			$pwd = null;
+			if($dataa['pass'] == $data['pass']){
+				$pwd = $data['pass'];
+			} else {
+				$pwd = md5($data['pass']);
+			}
+
 			$data1 = array(
 				'id_user' => $data['user'],
-				'pass' => $data['pass'],
+				'pass' => $pwd,
 				'id_peran' => $data['peran']
 			);
-			// $data1 = array(
-			// 	'id_user' => $id_user,
-			// 	'pass' => $pwd,
-			// 	'id_peran' => $id_peran
-			// );
-			
-			$query = "UPDATE user
-			SET id_user = '$id_user', pass = '$pwd', id_peran = $id_peran
-			WHERE id_user = '$id_user' AND id_peran=$id_peran";
-			$data = $this->db->query($query);
 
-			// UPDATE user SET id_user = '$id_user', pass = '$pwd', id_peran = '$id_peran' WHERE id_user = 'yogaas' AND id_peran = 2;
-
-
-			// $this->db->where('id_user', $data['user']);
-			// $queryy = $this->db->update('user', $data1);
+			$this->db->where($kondisi);
+			$queryy = $this->db->update('user', $data1);
 			// Produces:
 			//
 			//      UPDATE mytable
 			//      SET title = '{$title}', name = '{$name}', date = '{$date}'
 			//      WHERE id = $id
-			if($data){
+			if($queryy){
 				echo '<script>alert("Data berhasil di update!");</script>';
 			} else {
 				echo '<script>alert("Data tidak berhasil di update!"); </script>';
 			}
-
-		// }
-    }
+		}
+	}
 }

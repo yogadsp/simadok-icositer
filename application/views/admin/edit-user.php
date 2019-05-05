@@ -20,6 +20,7 @@
 
             <p>
                 <label>ID User    </label>
+                    <input type="hidden" name="user_lama" value="<?php echo $user->id_user ?>">
                     <input type="text" name="user" id="user" size="40" value ="<?php echo $user->id_user ?>" required>
             </p>
             <p>
@@ -29,6 +30,7 @@
             <p>
                 <label>Peran    :</label>
                     <!-- mengulang data berdasarkan data yang telah diambil dari controller -->
+                    <input type="hidden" name="peran_lama" value="<?php echo $user->id_peran ?>">
                     <select id="peran" name="peran">
                         <?php foreach ($peran->result() as $row ) { ?>
                             <option value="<?php echo $row->id_peran?>" <?php echo ($user->id_peran == $row->id_peran) ? 'selected' : '' ?>>
