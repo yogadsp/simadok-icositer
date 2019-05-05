@@ -83,6 +83,6 @@
     <script src="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 
-    <?php $this->load->view('isi-form'); ?>  
+    <?php $this->load->view('admin/isi-form'); ?>  
 </body>
 </html>
