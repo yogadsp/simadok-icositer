@@ -25,9 +25,9 @@
             <input type="hidden" name="id_pusat" id="id_pusat" value="<?php echo $pusat->id_pusat ?>">
 
             <p>
-                <label>Bidang    :</label>
+                <label>Bidang </label>
                     <!-- mengulang data berdasarkan data yang telah diambil dari controller -->
-                    <select id="bidang" name="bidang">
+                    <select id="bidang" name="bidang" >
                         <?php foreach ($bidang_->result() as $row ) { ?>
                             <option value="<?php echo $row->id_bidang?>" <?php echo ($pusat->id_bidang == $row->id_bidang) ? 'selected' : '' ?>>
                                 <?php echo $row->nama_bidang;?>
@@ -38,7 +38,7 @@
             </p>
 
             <p>
-                <label>Sub Bidang   :</label>
+                <label>Sub Bidang</label>
                     <select id="sub_bidang" name="sub_bidang">
                         <?php foreach ($sub_bidang->result() as $row ) { ?>
                             <option value="<?php echo $row->id_subbidang?>" <?php echo ($pusat->id_subbidang == $row->id_subbidang) ? 'selected' : '' ?>>
