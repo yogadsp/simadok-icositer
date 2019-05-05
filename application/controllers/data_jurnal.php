@@ -60,7 +60,7 @@ class data_jurnal extends CI_Controller {
 		$this->load->model('M_bid_subbid');
 		$isi['sub_bidang'] = $this->M_bid_subbid->cariSub($id_pusat);
 
-		$this->load->view('edit-jurnal', $isi);
+		$this->load->view('admin/edit-jurnal', $isi);
 	}
 
 	public function hapusJurnal(){
@@ -73,7 +73,7 @@ class data_jurnal extends CI_Controller {
 			unlink("./upload/jurnal/".$_id->dokumen);
 		}
 
-		redirect(base_url('home/data_jurnal'), 'refresh');
+		redirect(base_url('data_jurnal'), 'refresh');
 	}
 
 	public function updatePusat(){
@@ -120,7 +120,7 @@ class data_jurnal extends CI_Controller {
 		
 		$this->M_pusatData->updateDataPusat($id_pusat, $data);
 		
-		redirect(base_url('home/data_jurnal'), 'refresh');
+		redirect(base_url('data_jurnal'), 'refresh');
 		
 	}
 }
