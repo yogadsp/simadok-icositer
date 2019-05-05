@@ -22,7 +22,7 @@
 <?php include("konversi_tanggal.php"); ?>
     
     <div class="col-md-12" style="padding-bottom: 190px;">
-    <p style="text-align:justify;"  "><img src="<?php echo base_url();?>assets/img/tabel.png" style="float:right; width: 500px;" />
+    <p style="text-align:justify;"><img src="<?php echo base_url();?>assets/img/tabel.png" style="float:right; width: 500px;" />
             <br>
             <br>
             <br>
