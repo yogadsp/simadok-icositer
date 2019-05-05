@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css"> -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
@@ -21,7 +21,23 @@
 <?php $this->load->view('admin/header_adit'); ?>
 <?php include("konversi_tanggal.php"); ?>
 
-    <center>
+    <div class="col-md-12" >
+        <p align="left">
+        <h1>ICOSITER</h1>
+            <h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h6>Konferensi internasional yang menghadirkan tokoh</h6>
+            <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
+            <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>
+            <h6>Institut Teknologi Sumatera</h6>
+        </p>
+        <p align="right">
+            <img src="<?php echo base_url();?>assets/img/tabel.png" class="img-responsive" width="500" >
+        </p>
+    </div>
+        
+
+        <!-- tabel jurnal -->
         <h2>DATA JURNAL</h2>
     </center>
         <div class="row" style="margin: 0 20px 0 20px;">
