@@ -76,7 +76,7 @@
                             <td>
                                 <a href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em;">Edit</a>
                             
-                            <a href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+                                <a href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
