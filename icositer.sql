@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Mei 2019 pada 19.02
+-- Generation Time: 05 Mei 2019 pada 10.12
 -- Versi Server: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -85,7 +85,8 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `tgl_galeri`, `keterangan`, `gambar`, `id_user`) VALUES
-(3, '2019-05-08', 'Pembagian Hadiah', 'c400d8bbbccbe48f6346c261394207f8.png', 'yoga');
+(6, '2019-05-08', 'Pembagian Hadiah', 'b9bd332a7c109d857208efa67c551833.png', 'yoga'),
+(7, '2019-05-15', 'Pembagian', 'c1f16a8141d56539f3c3af00c7a9fa78.jpg', 'yoga');
 
 -- --------------------------------------------------------
 
@@ -119,30 +120,6 @@ INSERT INTO `jurnal` (`id_jurnal`, `judul_jurnal`) VALUES
 (105, 'Perubahan Bidang'),
 (106, 'ASDD'),
 (107, 'Kehutanan Hujan');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `penulis`
---
-
-CREATE TABLE `penulis` (
-  `email` varchar(50) NOT NULL,
-  `nama_penulis` varchar(35) DEFAULT NULL,
-  `afiliasi` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `penulis`
---
-
-INSERT INTO `penulis` (`email`, `nama_penulis`, `afiliasi`) VALUES
-('arysca.wisnu@tk.itera.ac.id', 'Arysca Wisnu Satria', 'ITERA'),
-('indah.oktaviani@bi.itera.ac.id', 'Indah Oktaviani', 'ITERA'),
-('pratiwinindhita@gmail.com', 'Nindhita Pratiwi', 'ITERA'),
-('rajif@if.itera.ac.id', 'Rajif Agung Yunmar', 'ITERA'),
-('tri.utomo@ma.itera.ac.id', 'Tri Utomo', 'ITERA'),
-('yudistira@me.itera.ac.id', 'Hadi Teguh Yudistira', 'ITERA');
 
 -- --------------------------------------------------------
 
@@ -288,12 +265,6 @@ ALTER TABLE `jurnal`
   ADD PRIMARY KEY (`id_jurnal`);
 
 --
--- Indexes for table `penulis`
---
-ALTER TABLE `penulis`
-  ADD PRIMARY KEY (`email`);
-
---
 -- Indexes for table `peran`
 --
 ALTER TABLE `peran`
@@ -341,7 +312,7 @@ ALTER TABLE `bid_subbid`
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `jurnal`
