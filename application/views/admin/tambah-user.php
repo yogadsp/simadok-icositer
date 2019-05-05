@@ -30,7 +30,7 @@
         </p>
         <input type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
     </form>
-    <a href="<?php echo base_url();?>tambah_user/tampilUser">Lihat User</a>
+    <a href="<?php echo base_url();?>data_user">Lihat User</a>
 
     <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.js"></script>

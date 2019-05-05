@@ -18,12 +18,12 @@
 <?php $this->load->view('admin/header_adit'); ?>
 
     <center>
-        <h2>DATA JURNAL</h2>
+        <h2>DATA USER</h2>
     </center>
     <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-            <a href="<?php echo current_url();?>/tambahUser" class="btn btn-primary">Tambah User</a>
+            <a href="<?php echo current_url();?>/formTambahUser" class="btn btn-primary">Tambah User</a>
             <br>
                     <table class="table table-striped" id="contoh">
                     <thead class="kepala">
@@ -32,6 +32,7 @@
                         <th scope="col">User</th>
                         <th scope="col">Password</th>
                         <th scope="col">Kategori</th>
+                        <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="isi_data">
@@ -43,6 +44,10 @@
                             <td><?php echo $row->id_user ?></td>
                             <td><?php echo $row->pass ?></td>
                             <td><?php echo $row->nama_peran ?></td>
+                            <td>
+                                <a href="<?php echo base_url(); ?>data_user/editUser/<?php echo $row->id_user; ?>/<?php echo $row->id_peran; ?>" style="font-size: 0.8em;">Edit</a>
+                                <a href="<?php echo base_url(); ?>data_user/hapusUser/<?php echo $row->id_user; ?>/<?php echo $row->id_peran; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+                            </td>
                         </tr>
                     <?php } ?>
                     </tbody>
