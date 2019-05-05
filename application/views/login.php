@@ -20,7 +20,7 @@
     <div class="avatar">
       <img src="<?php echo base_url();?>assets/img/userr.png" alt="Avatar">
     </div>
-        <h2 class="text-center">Login</h2>   
+    <div class="jarak">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Username" id="user1" 
           name="user" required="required">
@@ -32,6 +32,7 @@
         <div class="form-group">
             <input type="submit" class="btn btn-primary btn-lg btn-block" value="Login">
         </div>
+      </div>
     </form>
 </div>
 
