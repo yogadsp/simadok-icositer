@@ -71,6 +71,7 @@
 		background: #A52A2A;
 		border: none;
 		margin-bottom: 20px;
+		border-radius: 8px;
     }
 	.login-form .btn:hover, .login-form .btn:focus {
 		background: #A0522D;
@@ -89,4 +90,8 @@
 	}
 	.login-form form a:hover {
 		text-decoration: underline;
+	}
+	.form-control{
+		border-radius: 8px;
+		border-color: #A52A2A;
 	}
