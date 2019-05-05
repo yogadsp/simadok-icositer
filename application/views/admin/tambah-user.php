@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 </head>
 <body>
+<?php $this->load->view('admin/header_adit'); ?>
     <form action="<?php echo base_url();?>tambah_user/tambahUser" method="post">
         <p>
             <label>Username    </label>

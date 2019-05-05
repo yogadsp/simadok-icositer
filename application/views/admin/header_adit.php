@@ -13,7 +13,7 @@
     <form class="form-inline my-2 my-lg-0">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <b><!-- <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only"></span></a> -->
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>data_jurnal">Jurnal</a>

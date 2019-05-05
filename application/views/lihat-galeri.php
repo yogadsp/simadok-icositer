@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php $this->load->view('header_user'); ?>
+    <?php include("admin/konversi_tanggal.php"); ?>
 
     <center>
         <h2>GALERI</h2>
@@ -17,7 +18,7 @@
             <?php foreach($galeri->result() as $row) { ?>
                 <td>
                     <img src="<?php echo base_url("upload/galeri/$row->gambar") ?>" width="40%">
-                    <p>Tanggal Kegiatan : <?php echo $row->tgl_galeri ?> </p>
+                    <p>Tanggal Kegiatan : <?php echo tanggal_($row->tgl_galeri) ?> </p>
                     <p><?php echo $row->keterangan ?> </p>
                 </td>
             <?php } ?>

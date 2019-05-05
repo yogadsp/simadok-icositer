@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 </head>
 <body>
+<?php $this->load->view('admin/header_adit'); ?>
 <!-- load modal form bidang -->
 <?php $this->load->view('admin/form-bidang'); ?>
 <?php $this->load->view('admin/form-subbidang'); ?>
