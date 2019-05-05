@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+    
 </head>
 <body>
 
@@ -33,7 +35,9 @@
                 <a href="<?php echo current_url();?>/tampilJSAT" class="btn btn-secondary">JSAT</a>
                 <a href="<?php echo current_url();?>/tampilIOP" class="btn btn-secondary">IOP</a>
                 <a href="<?php echo current_url();?>/tampilSBSN" class="btn btn-secondary">SBSN </a>
-            </div>
+            </div><br><br>
+
+            <p>Ekspor</p>
 
             <div class="table-responsive-xl">
                     <table class="table table-sm table-bordered" id="contoh">
@@ -87,11 +91,21 @@
     <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url();?>assets/DataTables/datatables.min.js"></script>
-
+    
+    <?php $this->load->view('admin/js-ekspor') ?>
 
     <script>
 		$(document).ready(function() {
-            $('#contoh').DataTable();
+            $('#contoh').DataTable( {
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'print', {
+                        extend: 'pdfHtml5',
+                        orientation: 'landscape',
+                        pageSize: 'LEGAL'
+                    }
+                ]
+            } );
         });
 	</script>
     
