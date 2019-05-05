@@ -9,7 +9,7 @@ class Cek_login extends CI_model{
 					echo '<script>alert("Anda harus dahulu!");
 					window.location.href="Login";
 					</script>'; //tambahin sendiri kalo jquery
-				} else if ($id_peran != '2'){
+				} else if ($id_peran == '3'){
 					echo '<script>alert("Anda bukan editor!");
 					window.location.href="home";
 					</script>';
@@ -24,7 +24,7 @@ class Cek_login extends CI_model{
 					echo '<script>alert("Anda harus login dahulu!");
 					window.location.href="Login";
 					</script>'; //tambahin sendiri kalo jquery
-				} else if ($id_peran != '1'){
+				} else if ($id_peran == '2' || $id_peran == '3'){
 					echo '<script>alert("Anda bukan admin!");
 					window.location.href="data_jurnal";
 					</script>';
