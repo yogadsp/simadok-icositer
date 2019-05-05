@@ -28,8 +28,6 @@ class Login extends CI_Controller {
 			window.history.back();;
 					</script>';
 		}
-
-		
 	}
 
 	public function aksi_login()

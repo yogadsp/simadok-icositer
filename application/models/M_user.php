@@ -26,7 +26,7 @@ class M_user extends CI_model{
 	}
 
 	function tampilDataUser(){
-		$query = "SELECT id_user, pass, peran.nama_peran FROM user NATURAL JOIN peran";
+		$query = "SELECT * FROM user NATURAL JOIN peran";
 
 		$data = $this->db->query($query);
 

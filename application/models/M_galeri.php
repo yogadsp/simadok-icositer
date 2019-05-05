@@ -9,6 +9,13 @@ class M_galeri extends CI_model{
         return $data;
     }
 
+    public function tampilGambar(){
+        $query = "SELECT tgl_galeri, keterangan, gambar FROM galeri";
+        $data = $this->db->query($query);
+
+        return $data;
+    }
+
     public function posData($data){
         $data1 = array(
             'tgl_galeri' => $data['tgl_galeri'],

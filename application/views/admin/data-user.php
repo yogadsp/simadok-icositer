@@ -62,6 +62,8 @@
             
             $('#contoh').DataTable();
         });
+
+        
 	</script>
 </body>
 </html>

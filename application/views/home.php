@@ -18,14 +18,6 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-
-            <!-- <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="<?php echo base_url();?>home/data_jurnal" class="btn btn-secondary active">Tampil Semua</a>
-                <a href="<?php echo current_url();?>/tampilJSAT" class="btn btn-secondary">JSAT</a>
-                <a href="<?php echo current_url();?>/tampilIOP" class="btn btn-secondary">IOP</a>
-                <a href="<?php echo current_url();?>/tampilSBSN" class="btn btn-secondary">SBSN </a>
-            </div> -->
-            
                     <table class="table table-striped" id="contoh">
                     <thead class="kepala">
                         <tr>
@@ -74,10 +66,6 @@
             $('#contoh').DataTable();
         });
 	</script>
-
-    <!-- <p><a href="<?php echo current_url();?>/data_jurnal">Data Jurnal</a></p>
-
-    <p><a href="<?php echo current_url();?>/admin/tambah_user">Tambah User</a></p> -->
 
 </body>
 </html>

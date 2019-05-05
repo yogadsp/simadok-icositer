@@ -47,7 +47,7 @@
                             <td><?php echo $no++ ?></td>
                             <td><?php echo tanggal_($row->tgl_galeri) ?></td>
                             <td><?php echo $row->keterangan ?></td>
-                            <td><img src="<?php echo base_url("upload/galeri/$row->gambar"); ?>" alt="" width="80%"></td>
+                            <td><img src="<?php echo base_url("upload/galeri/$row->gambar"); ?>" alt="" width="40%"></td>
                             <td><?php echo $row->id_user ?></td>
                             <td>
                                 <a href="<?php echo current_url(); ?>/editGaleri/<?php echo $row->id_galeri; ?>" style="font-size: 0.8em;">Edit</a>
