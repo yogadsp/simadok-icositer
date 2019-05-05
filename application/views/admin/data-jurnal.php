@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css"> -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
@@ -20,11 +20,24 @@
 
 <?php $this->load->view('admin/header_adit'); ?>
 <?php include("konversi_tanggal.php"); ?>
-
-    <center>
-        <h2>DATA JURNAL</h2>
-    </center>
-        <div class="row" style="margin: 0 20px 0 20px;">
+    
+    <div class="col-md-12" style="padding-bottom: 190px;">
+    <p style="text-align:justify;"  "><img src="<?php echo base_url();?>assets/img/tabel.png" style="float:right; width: 500px;" />
+            <br>
+            <br>
+            <br>
+            <h1>ICOSITER</h1>
+            <h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h6>Konferensi internasional yang menghadirkan tokoh</h6>
+            <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
+            <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>
+            <h6>Institut Teknologi Sumatera</h6>        
+    </p>
+    </div>
+    
+    <!-- tabel jurnal -->
+        <div class="row" style="margin: 0 15px 0 15px;">
             <div class="col-md-12">
             
             <a href="<?php echo current_url();?>/form_jurnal" class="btn btn-primary">Tambah Jurnal</a>
@@ -72,11 +85,13 @@
                             <td><?php echo $row->nama_subbidang ?></td>
                             <td><?php echo $row->status ?></td>
                             <td><?php echo $row->id_user ?></td>
-                            <td><a href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank">Download</a></td>
                             <td>
-                                <a href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em;">Edit</a>
+                                
+                                <a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank" style="font-size: 0.8em; border-radius: 4px;">Download</a></td>
+                            <td>
+                                <a class="btn btn-primary" href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em; border-radius: 4px;">Edit</a>
                             
-                                <a href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+                                <a class="btn btn-danger" href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;" >Delete</a>
                             </td>
                         </tr>
                     <?php } ?>

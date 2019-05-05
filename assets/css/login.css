@@ -36,14 +36,8 @@
 		border-radius: 2px;
     	margin-bottom: 15px;
         font-size: 13px;
-        background: #ececec;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         padding: 30px;	
         position: relative;	
-    }
-	.login-form h2 {
-		font-size: 22px;
-        margin: 35px 0 25px;
     }
 	.login-form .avatar {
 		position: absolute;
@@ -51,16 +45,15 @@
 		left: 0;
 		right: 0;
 		top: -50px;
-		width: 95px;
-		height: 95px;
+		width: 35%;
 		border-radius: 50%;
 		z-index: 9;
-		background: brown;
 		padding: 1px;
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+
 	}
 	.login-form .avatar img {
 		width: 100%;
+		border-radius: 50%;
 	}	
     .login-form input[type="checkbox"] {
         margin-top: 2px;
@@ -68,9 +61,10 @@
     .login-form .btn {        
         font-size: 16px;
         font-weight: bold;
-		background: #A52A2A;
+		background: #6E0A18;
 		border: none;
 		margin-bottom: 20px;
+		border-radius: 8px;
     }
 	.login-form .btn:hover, .login-form .btn:focus {
 		background: #A0522D;
@@ -89,4 +83,11 @@
 	}
 	.login-form form a:hover {
 		text-decoration: underline;
+	}
+	.form-control{
+		border-radius: 8px;
+		border-color: #6E0A18;
+	}
+	.jarak{
+		padding-top: 25%;
 	}

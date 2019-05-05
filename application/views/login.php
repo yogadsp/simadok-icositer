@@ -18,9 +18,9 @@
     <form id="frm_login" method="post">
         <input type="hidden" name="urlskrg" value="<?php echo current_url();?>" id="urlskrg1">
     <div class="avatar">
-      <img src="<?php echo base_url();?>assets/img/user.png" alt="Avatar">
+      <img src="<?php echo base_url();?>assets/img/userr.png" alt="Avatar">
     </div>
-        <h2 class="text-center">Login</h2>   
+    <div class="jarak">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Username" id="user1" 
           name="user" required="required">
@@ -30,8 +30,9 @@
           name="pass" required="required">
         </div>        
         <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign In">
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Login">
         </div>
+      </div>
     </form>
 </div>
 
