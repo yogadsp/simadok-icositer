@@ -39,9 +39,9 @@
     <!-- tabel jurnal -->
         <div class="row" style="margin: 0 15px 0 15px;">
             <div class="col-md-12">
-            
+            <p>
             <a href="<?php echo current_url();?>/form_jurnal" class="btn btn-primary">Tambah Jurnal</a>
-            <br>
+            </p>
 
             <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="<?php echo base_url();?>home/data_jurnal" class="btn btn-secondary active">Tampil Semua</a>
@@ -89,8 +89,9 @@
                                 
                                 <a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank" style="font-size: 0.8em; border-radius: 4px;">Download</a></td>
                             <td>
+                                <p>
                                 <a class="btn btn-primary" href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em; border-radius: 4px;">Edit</a>
-                            
+                                </p>
                                 <a class="btn btn-danger" href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;" >Delete</a>
                             </td>
                         </tr>

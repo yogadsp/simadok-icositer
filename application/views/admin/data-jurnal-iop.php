@@ -35,9 +35,9 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-
+            <p>
             <a href="<?php echo current_url();?>/form_jurnal" class="btn btn-primary">Tambah Jurnal</a>
-            <br>
+            </p>
 
             <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="<?php echo base_url();?>data_jurnal" class="btn btn-secondary">Tampil Semua</a>
@@ -74,7 +74,7 @@
                             <td><?php echo $row->nama_subbidang ?></td>
                             <td><?php echo $row->status ?></td>
                             <td><?php echo $row->id_user ?></td>
-                            <td><a href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank">Download</a></td>
+                            <td><a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank">Download</a></td>
                         </tr>
                     <?php } ?>
                     </tbody>
