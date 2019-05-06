@@ -90,9 +90,10 @@
                                 <a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank" style="font-size: 0.8em; border-radius: 4px;">Download</a></td>
                             <td>
                                 <p>
-                                <a class="btn btn-primary" href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em; border-radius: 4px;">Edit</a>
+                                <a class="btn btn-primary" href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em; border-radius: 4px;">E</a>
+
                                 </p>
-                                <a class="btn btn-danger" href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;" >Delete</a>
+                                <a class="btn btn-danger" href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;" >D</a>
                             </td>
                         </tr>
                     <?php } ?>
