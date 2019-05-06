@@ -45,7 +45,7 @@
         } else {
       ?>
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login">Login</a>
+          <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login">Login</a></b>
         </li>
       <?php 
         } ?>
