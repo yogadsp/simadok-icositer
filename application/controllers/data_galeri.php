@@ -44,11 +44,11 @@ class data_galeri extends CI_Controller {
 		if($this->upload->do_upload('gambar')){
 			$data1 = array('upload_data' => $this->upload->data());
 			$gambar = $data1['upload_data']['file_name'];
-			$data['gambar']	= $galeri;
+			$data['gambar']	= $gambar;
 
             $gmb_lama = $this->M_galeri->cariGambar($id_galeri);
             // untuk menghapus file di folder
-			unlink(".upload/galeri/".$gmb_lama);
+			unlink("./upload/galeri/".$gmb_lama);
 		} else {
 			$data['gambar']	= $this->M_galeri->cariGambar($id_galeri);
         }
