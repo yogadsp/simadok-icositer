@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/data.css">
 </head>
 <body>
 <?php $this->load->view('admin/header_adit'); ?>
 
 <form action="<?php echo base_url('data_galeri/updateGaleri') ?>" method="post" enctype="multipart/form-data">
         <center>
-            <h3>EDIT GALERI</h3>
+            <h1>EDIT GALERI</h1>
 
             <!-- untuk mendapatkan id_user dari session -->
             <?php $id_user = $this->session->userdata('id_user'); ?>
@@ -24,25 +24,25 @@
             <input type="hidden" name="id_galeri" id="id_galeri" value="<?php echo $galeri->id_galeri ?>">
 
             <p>
-                <label>Tanggal    </label>
+                <label style="padding-right: 316px;" ><b>Tanggal Kegiatan</b>    </label>
                 <!-- strtotime digunakan untuk mengubah format tanggal, waktu, dll -->
-                    <input type="date" name="tgl_galeri" id="tgl_galeri" value ="<?php echo date('Y-m-d',strtotime($galeri->tgl_galeri)) ?>" required>
+                    <input class="form-control col-md-4" type="date" name="tgl_galeri" id="tgl_galeri" value ="<?php echo date('Y-m-d',strtotime($galeri->tgl_galeri)) ?>" required>
                     
             </p>
             <p>
-                <label>Keterangan    </label>
-                    <input type="text" name="ket" id="ket" size="40" value ="<?php echo $galeri->keterangan; ?>" required>
+                <label style="padding-right: 356px;"><b>Keterangan</b></label>
+                    <input class="form-control col-md-4" type="text" name="ket" id="ket" size="40" value ="<?php echo $galeri->keterangan; ?>" required>
             </p>
             <p>
-                <label>Foto Sekarang
+                <label><b>Foto Sekarang</b><br><br>
                 <img src="<?php echo base_url("upload/galeri/$galeri->gambar"); ?>" alt="" width="80%">
                 </label>
             </p>
             <p>
-                <label>Upload Foto Baru    </label>
+                <label style="padding-right: 10px;"><b>Upload Foto Baru</b></label>
                     <input type="file" name="gambar" id="gambar">
             </p>
-            <input type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
+            <input class="btn btn-success" type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
         </center>
     </form>
 

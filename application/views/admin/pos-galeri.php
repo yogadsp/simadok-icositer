@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/data.css">
 </head>
 <body>
     <?php $this->load->view('admin/header_adit'); ?>
@@ -16,29 +16,30 @@
     <!-- enctype="multipart/form-data" agar file bisa diupload -->
     <form action="<?php echo base_url(); ?>pos_galeri/pos" method="post" enctype="multipart/form-data">
         <center>
-            <h3 style="color: black;">POS GALERI</h3>
+            <br>
+            <br>
+            <h1>POS GALERI</h1>
 
             <!-- untuk mendapatkan id_user dari session -->
             <?php $id_user = $this->session->userdata('id_user'); ?>
-            <input type="hidden" name="user" id="user" value="<?php echo $id_user ?>">
+            <input  type="hidden" name="user" id="user" value="<?php echo $id_user ?>">
 
             <p>
-                <label style="color: black;">Tanggal Kegiatan    </label>
-                    <input type="date" name="tgl_galeri" id="tgl_galeri" required>
+                <label style="padding-right: 316px;"><b>Tanggal Kegiatan</b></label>
+                    <input class="form-control col-md-4" type="date" name="tgl_galeri" id="tgl_galeri" required>
             </p>
 
             <p>
-                <label style="color: black;">Keterangan    </label>
-                    <input type="text" name="ket" id="ket" size="50" required>
+                <label style="padding-right: 356px;"><b>Keterangan</b></label>
+                    <input class="form-control col-md-4" placeholder="Keterangan" type="text" name="ket" id="ket" size="50" required>
             </p>
 
             <p>
-                <label style="color: black;">Upload Foto    </label>
-                <div style="color: black;">
+                <label style="padding-right: 52px;"><b>Upload Foto</b></label>
                     <input type="file" name="gambar" id="gambar" required>
-                    </div>
+                    
             </p>
-            <input type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
+            <input class="btn btn-success" type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
 
         </center>
     </form>

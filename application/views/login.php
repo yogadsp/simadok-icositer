@@ -4,6 +4,7 @@
   <title>Login</title>
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- login -->
   <!-- penutup -->
@@ -21,14 +22,15 @@
       <img src="<?php echo base_url();?>assets/img/userr.png" alt="Avatar">
     </div>
     <div class="jarak">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Username" id="user1" 
+        <div class="form-control">          
+          <i class="fas fa-envelope"></i> &nbsp;<input type="text" style="border: none; width: 90%;" placeholder="Username" id="user1" 
           name="user" required="required">
         </div>
-    <div class="form-group">
-          <input type="password" class="form-control" placeholder="Password" id="pass1" 
+        <br>
+    <div class="form-control">
+          <i class="fas fa-lock"> &nbsp;</i><input type="password" style="border: none; width: 90%;" placeholder="Password" id="pass1" 
           name="pass" required="required">
-        </div>        
+        </div> <br>    
         <div class="form-group">
             <input type="submit" class="btn btn-primary btn-lg btn-block" value="Login">
         </div>

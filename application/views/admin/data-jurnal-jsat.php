@@ -23,9 +23,9 @@
             <br>
             <br>
             <br>
-            <h1>ICOSITER</h1>
-            <h3>International Conference on Science,</h3>
-            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h1><b>ICOSITER</b></h1>
+            <i><h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3></i>
             <h6>Konferensi internasional yang menghadirkan tokoh</h6>
             <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
             <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>

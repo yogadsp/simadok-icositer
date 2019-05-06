@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/tabell.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
 </head>
 <body>
 
@@ -20,13 +21,14 @@
 <?php include("konversi_tanggal.php"); ?>
 
     <center>
-        <h2>DATA GALERI</h2>
+        <h1>DATA GALERI</h1>
     </center>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-
-            <a href="<?php echo current_url();?>/pos_galeri" class="btn btn-primary">Tambah Galeri</a>
+            <p>
+            <a class="btn btn-success" href="<?php echo current_url();?>/pos_galeri" class="btn btn-primary">Tambah Foto</a>
+            </p>
             
                     <table class="table table-striped table-sm" id="contoh">
                     <thead class="kepala">
@@ -50,9 +52,10 @@
                             <td><img src="<?php echo base_url("upload/galeri/$row->gambar"); ?>" alt="" width="40%"></td>
                             <td><?php echo $row->id_user ?></td>
                             <td>
-                                <a href="<?php echo current_url(); ?>/editGaleri/<?php echo $row->id_galeri; ?>" style="font-size: 0.8em;">Edit</a>
-                            
-                            <a href="<?php echo current_url(); ?>/hapusGaleri/<?php echo $row->id_galeri; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+                                <a class="btn btn-primary" href="<?php echo current_url(); ?>/editGaleri/<?php echo $row->id_galeri; ?>" style="font-size: 0.8em;">Edit</a>
+
+                            &nbsp;<br>
+                            <a class="btn btn-danger" href="<?php echo current_url(); ?>/hapusGaleri/<?php echo $row->id_galeri; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>

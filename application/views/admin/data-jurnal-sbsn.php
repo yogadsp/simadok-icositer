@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
     <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css"> -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
 </head>
 <body>
@@ -23,9 +22,9 @@
             <br>            <br>
 
             <br>
-            <h1>ICOSITER</h1>
-            <h3>International Conference on Science,</h3>
-            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h1><b>ICOSITER</b></h1>
+            <i><h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3></i>
             <h6>Konferensi internasional yang menghadirkan tokoh</h6>
             <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
             <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>
@@ -47,7 +46,7 @@
             </div><br><br>
 
             <p>Ekspor</p>
-                    <table class="table table-striped" id="contoh">
+                    <table class="table table-bordered" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>

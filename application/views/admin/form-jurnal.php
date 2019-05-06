@@ -41,20 +41,17 @@
                                 <?php echo $row->nama_bidang; ?>
                             </option>
                         <?php } ?>
-                    </select>
-                
-                    <p>
+                    </select><br>
                     <a class="btn btn-info" href="#" data-toggle="modal" data-target="#bidang">Tambah Bidang</a>
-                </p>
+                
             </p>
             <p>
                 <label style="padding-right: 350px;"><b>Sub Bidang </b>  </label>
                     <select class="form-control col-md-4" id="sub_bidang" name="sub_bidang">
                         <option>--Pilih Sub Bidang--</option>
                     </select>
-                    <p>
+                    <br>
                     <a class="btn btn-info" href="#tambahSubbidang" id="#tambahSubbidang">Tambah SubBidang</a>
-                </p>
             </p>
             <p>
                 <label style="padding-right: 389px;"><b>Jurnal</b>    </label>

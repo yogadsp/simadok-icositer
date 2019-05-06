@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Beranda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/dash.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
+
 </head>
 <body>
     <?php $this->load->view('header_user'); ?>
@@ -17,9 +21,9 @@
             <br>
             <br>
             <br>
-            <h1>ICOSITER</h1>
-            <h3>International Conference on Science,</h3>
-            <h3>Infrastucture, Technology and Regional Development</h3>
+            <h1><strong>ICOSITER</strong></h1>
+            <i><h3>International Conference on Science,</h3>
+            <h3>Infrastucture, Technology and Regional Development</h3></i>
             <h6>Konferensi internasional yang menghadirkan tokoh</h6>
             <h6>sains, infrastruktur, dan pengembangan wilayah</h6> 
             <h6>yang dilakukan setiap tahun untuk merayakan Dies Natalis</h6>
@@ -32,7 +36,7 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                    <table class="table table-striped" id="contoh">
+                    <table class="table table-bordered" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>

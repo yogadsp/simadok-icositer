@@ -18,7 +18,7 @@
 <?php $this->load->view('admin/header_adit'); ?>
 
     <center>
-        <h2>DATA USER</h2>
+        <h2 style="color: brown;"><b>DATA USER</b></h2>
     </center>
     <div class="row">
             <div class="col-md-1"></div>
