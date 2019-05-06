@@ -21,7 +21,7 @@
 <?php include("konversi_tanggal.php"); ?>
 
     <center>
-        <h1>DATA GALERI</h1>
+        <h1 style="color: brown;"><b>DATA GALERI</b></h1>
     </center>
         <div class="row">
             <div class="col-md-1"></div>
