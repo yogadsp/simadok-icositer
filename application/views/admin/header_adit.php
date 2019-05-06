@@ -39,7 +39,7 @@
         if($id_user != '') {
       ?>  
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out">Logout</a>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out"><b>Logout</b></a>
         </li>
       <?php
         } else {
