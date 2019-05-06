@@ -52,8 +52,10 @@ class data_user extends CI_Controller {
 
     public function updateUser(){
         $data['user']           = $this->input->post('user');
+        $data['user_lama']           = $this->input->post('user_lama');
         $data['pass']			= $this->input->post('pass');
         $data['peran']			= $this->input->post('peran');
+        $data['peran_lama']           = $this->input->post('peran_lama');
         
         $this->load->model('M_user');
 		$this->M_user->updateData($data);
