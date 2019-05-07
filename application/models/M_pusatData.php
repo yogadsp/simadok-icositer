@@ -102,7 +102,7 @@ class M_pusatData extends CI_model{
                 'email' => $data['email'],
                 'afiliasi' => $data['afiliasi'],
                 'status' => $data['status'],
-                'dokumen' => $data['dokumen']
+                'dokumen' => $data['dok']
             );
 
             $this->db->where('id_pusat', $id_pusat);

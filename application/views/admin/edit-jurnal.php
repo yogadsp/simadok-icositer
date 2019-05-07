@@ -14,7 +14,7 @@
 <!-- load modal form bidang -->
 <?php $this->load->view('admin/form-bidang'); ?>
 <?php $this->load->view('admin/form-subbidang'); ?>
-<form action="<?php echo base_url('data_jurnal/updatePusat') ?>" id="jurnalForm" method="post">
+<form action="<?php echo base_url('data_jurnal/updatePusat') ?>" id="jurnalForm" method="post" enctype="multipart/form-data">
         <center>
             <h1>FORM JURNAL</h1>
             <br>
@@ -74,7 +74,7 @@
                 <label style="padding-right: 40px;"><b>Upload Jurnal</b></label>
                     <input type="file" name="dokumen" id="dokumen" size="40">
             </p>
-            <input class=" btn btn-success" type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
+            <input class="btn btn-success" type="submit" name="submitDataa" id="submitDataa" value="SUBMIT">
         </center>
     </form>
 

@@ -69,7 +69,7 @@ class form_jurnal extends CI_Controller {
 			$this->M_pusatData->tambah($data);
 
 			echo '<script>alert("Success!");</script>';
-			redirect(base_url('home/data_jurnal'), 'refresh');
+			redirect(base_url('data_jurnal'), 'refresh');
 		} else {
 			echo '<script>alert("Failed upload this Record!");</script>';
 			echo "<script> window.history.back(); </script>";
@@ -95,11 +95,4 @@ class form_jurnal extends CI_Controller {
 		$this->load->model('M_bid_subbid');
 		$this->M_bid_subbid->tambah($id_bidang, $id_subbidang);
 	}
-
-	// public function tambahBidSubbid (){
-	// 	$nama_subbidang			= $this->input->post('nama_subbidang');
-	// 	$id_bidang				= $this->input->post('id_bidang');
-
-
-	// }
 }

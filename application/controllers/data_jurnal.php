@@ -89,17 +89,17 @@ class data_jurnal extends CI_Controller {
 		$config['encrypt_name'] 	= TRUE;
 		$this->load->library('upload', $config);
 
-		$data['dokumen'] = null;
+		$data['dok'] = null;
 
 		if($this->upload->do_upload('dokumen')){
 			$data1 = array('upload_data' => $this->upload->data());
 			$dokumen = $data1['upload_data']['file_name'];
-			$data['dokumen']	= $dokumen;
+			$data['dok']	= $dokumen;
 
 			$dok_lama = $this->M_pusatData->cariDokumen($id_pusat);
-			unlink(".upload/jurnal/".$dok_lama);
+			unlink("./upload/jurnal/".$dok_lama);
 		} else {
-			$data['dokumen']	= $this->M_pusatData->cariDokumen($id_pusat);
+			$data['dok']	= $this->M_pusatData->cariDokumen($id_pusat);
 		}
 
 		$data['id_jurnal']			= $this->input->post('id_jurnal');
