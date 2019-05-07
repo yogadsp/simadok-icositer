@@ -16,15 +16,21 @@
     <center>
         <br><br>
         <h1><b>TENTANG</b></h1>
-        <div class="col-md-9" style="text-align:justify;">
-        <p><h6>
-           International Conference on Science,
-Infrastucture, Technology and Regional Development
+        <div class="col-md-10" style="text-align:justify;">
+        <p><h6><b>
+           ICOSITER International Conference on Science,
+Infrastucture, Technology and Regional Development</b>
 Konferensi internasional yang menghadirkan tokoh
 sains, infrastruktur, dan pengembangan wilayah
 yang dilakukan setiap tahun untuk merayakan Dies Natalis
-Institut Teknologi Sumatera
-        </h6></p></div>
+Institut Teknologi Sumatera.
+        </h6></p>
+        <h6>
+           Web Dokumen Icositer ini dibangun oleh tim simadok_icositer yang berjumlah 7 orang, yang masing-masing memiliki kemampuan tersendiri dalam pengembangan web ini, dibawah ini profil singkat pengembang web dokumen icositer. 
+        </h6></p>
+
+
+    </div>
 
 <!-- data pembuat web -->
 <div class="gallery">
@@ -52,7 +58,28 @@ Institut Teknologi Sumatera
   <a target="_blank" href="img_mountains.jpg">
     <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
   </a>
+  <div class="desc">Pasha Abdhul</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
   <div class="desc">Bayu Winnie</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Rina Katrina</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Agung</div>
 </div>
 
     </center>
