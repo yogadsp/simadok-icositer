@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
@@ -52,10 +52,10 @@
                             <td><img src="<?php echo base_url("upload/galeri/$row->gambar"); ?>" alt="" width="40%"></td>
                             <td><?php echo $row->id_user ?></td>
                             <td>
-                                <a class="btn btn-primary" href="<?php echo current_url(); ?>/editGaleri/<?php echo $row->id_galeri; ?>" style="font-size: 0.8em;">Edit</a>
+                                <a class="btn btn-primary" href="<?php echo current_url(); ?>/editGaleri/<?php echo $row->id_galeri; ?>" style="font-size: 0.8em;"><i class="fas fa-edit"></i></a>
 
-                            &nbsp;<br>
-                            <a class="btn btn-danger" href="<?php echo current_url(); ?>/hapusGaleri/<?php echo $row->id_galeri; ?>" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
+                            <br><br>
+                            <a class="btn btn-danger" href="<?php echo current_url(); ?>/hapusGaleri/<?php echo $row->id_galeri; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;"><i class="far fa-trash-alt"></i></a>
                             </td>
                         </tr>
                     <?php } ?>
