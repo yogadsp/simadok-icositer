@@ -1,5 +1,6 @@
 
   <!-- Just an image -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <nav class="navbar navbar-expand-lg navbar-light">
   <img src="<?php echo base_url();?>assets/img/icositerr.png" class="img-responsive" width="570" height="140">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,13 +40,13 @@
         if($id_user != '') {
       ?>  
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out"><b>Logout</b></a>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out"><b><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</b></a>
         </li>
       <?php
         } else {
       ?>
         <li class="nav-item">
-          <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login">Login</a></b>
+          <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Login"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a></b>
         </li>
       <?php 
         } ?>

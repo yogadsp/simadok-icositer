@@ -5,6 +5,7 @@
    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/DataTables/datatables.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -47,13 +48,13 @@
         if($id_user != '') {
       ?>  
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out"><b>Logout</b></a></b>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>logout/aksi_logout" value="Log Out"><b><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</b></a></b>
         </li>
       <?php
         } else {
       ?>
         <li class="nav-item">
-          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Log Out"><b>Login</b></a></b>
+          <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>login" value="Log Out"><b><i class="fas fa-sign-in-alt"></i>&nbsp;Login</b></a></b>
         </li>
       <?php 
         } ?>
