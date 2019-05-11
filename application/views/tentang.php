@@ -58,7 +58,7 @@ Institut Teknologi Sumatera.
   <a target="_blank" href="img_mountains.jpg">
     <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
   </a>
-  <div class="desc">Pasha Abdhul</div>
+  <div class="desc">Pasha Abdul Khalid</div>
 </div>
 
 <div class="gallery">
