@@ -34,7 +34,7 @@ Institut Teknologi Sumatera.
 
 <!-- data pembuat web -->
 <div class="gallery">
-    <img src="<?php echo base_url();?>assets/img/yoga.jpg" alt="Cinque Terre" width="500" height="400">
+    <img src="<?php echo base_url();?>assets/img/mahesa.jpg" alt="Cinque Terre" width="600" height="400">
       <div class="desc">Mahesa Darma Satria<br><i style="color: blue;" class="fab fa-linkedin">&nbsp;</i><b><a target="_blank" href="https://www.linkedin.com/in/mahesa-darma-satria/">Linkedin</a></b></div>
 </div>
 

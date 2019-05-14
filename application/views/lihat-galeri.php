@@ -37,13 +37,17 @@
 <?php foreach($galeri->result() as $row) { ?>
 <div class="gallery">
     
-  <a target="_blank" href="<?php echo base_url("upload/galeri/$row->gambar") ?>">
+  <!-- <a target="_blank" href="<?php echo base_url("upload/galeri/$row->gambar") ?>"> -->
     <img src="<?php echo base_url("upload/galeri/$row->gambar") ?>" alt="Cinque Terre" width="600" height="400">
-  </a>
+  <!-- </a> -->
   <div class="desc">
-    <p><i class="far fa-calendar-alt"></i>&nbsp;<b> <?php echo tanggal_($row->tgl_galeri) ?></b> </p>
-                    <p><h5><?php echo $row->keterangan ?> </h5></p>
-
+    <p>
+        <i class="far fa-calendar-alt"></i>&nbsp;
+        <b> <?php echo tanggal_($row->tgl_galeri) ?></b> 
+    </p>
+    <p>
+        <h5><?php echo $row->keterangan ?> </h5>
+    </p>
   </div>
 
 </div>
