@@ -23,15 +23,18 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda</a>
+      </li></b>
+      
+      
+      
+      <li class="nav-item">
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>jurnal">Jurnal</a></b>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>jurnal">Jurnal</a>
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>galeri">Galeri</a></b>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>galeri">Galeri</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>tentang">Tentang</a></b>
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>tentang">Tentang</a></b>
       </li>
       <?php $id_peran = $this->session->userdata('id_peran'); ?>
 
