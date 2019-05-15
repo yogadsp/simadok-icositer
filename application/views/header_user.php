@@ -21,8 +21,11 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda <span class="sr-only"></span></a>
+      <li class="nav-item">
+        <b><a class="nav-link" style="color: brown;" href="<?php echo base_url();?>">Beranda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>jurnal">Jurnal</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" style="color: brown;" href="<?php echo base_url();?>galeri">Galeri</a>

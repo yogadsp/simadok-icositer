@@ -48,7 +48,7 @@
             </div><br><br>
 
             <p>Ekspor</p>
-                    <table class="table table-striped" id="contoh">
+                    <table class="table table-bordered" id="contoh">
                     <thead class="kepala">
                         <tr>
                         <th scope="col">No</th>
@@ -64,6 +64,8 @@
                     </thead>
                     <tbody id="isi_data">
                     <?php 
+                        // menampilkan data dari database
+                        // mengambil variabel dari controller data_jurnal
                         $no = 1;
                         foreach($pusat_data->result() as $row) { ?>
                         <tr>
@@ -75,6 +77,7 @@
                             <td><?php echo $row->nama_subbidang ?></td>
                             <td><?php echo $row->status ?></td>
                             <td><?php echo $row->id_user ?></td>
+                            <!-- menampilkan link dokumen -->
                             <td><a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank"><i class="fas fa-download"></a></td>
                         </tr>
                     <?php } ?>
@@ -93,6 +96,7 @@
     <?php $this->load->view('admin/js-ekspor') ?>
 
     <script>
+        // script untuk men load table dan mengatur table
 		$(document).ready(function() {
             $('#contoh').DataTable( {
                 dom: 'Bfrtip',

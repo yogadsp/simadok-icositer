@@ -6,7 +6,7 @@ class Cek_login extends CI_model{
 				$pass = $this->session->userdata('pass');
 				$id_peran = $this->session->userdata('id_peran');
 				if(empty($id_user)){
-					echo '<script>alert("Anda harus dahulu!");
+					echo '<script>alert("Anda harus login dahulu!");
 					window.location.href="Login";
 					</script>'; //tambahin sendiri kalo jquery
 				} else if ($id_peran == '3'){
@@ -30,4 +30,15 @@ class Cek_login extends CI_model{
 					</script>';
 				}
 	}
+
+	function login_penulis(){
+		$id_user = $this->session->userdata('id_user');
+		$pass = $this->session->userdata('pass');
+		$id_peran = $this->session->userdata('id_peran');
+		if(empty($id_user)){
+			echo '<script>alert("Anda harus login dahulu!");
+			window.location.href="Login";
+			</script>'; //tambahin sendiri kalo jquery
+		}
+}
 }

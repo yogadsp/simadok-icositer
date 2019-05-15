@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
+$route['jurnal'] = 'jurnal_user';
 
 $route['data_jurnal/form_jurnal'] = 'form_jurnal';
 $route['data_jurnal/tampilJSAT'] = 'data_jurnal/tampilJSAT';
