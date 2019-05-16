@@ -47,22 +47,22 @@ Institut Teknologi Sumatera.
 </div>
 
 <div class="gallery">
-    <img src="<?php echo base_url();?>assets/img/yoga.jpg" alt="Northern Lights" width="600" height="400">
+    <img src="<?php echo base_url();?>assets/img/fardiansyah.jpg" alt="Northern Lights" width="600" height="400">
   <div class="desc">Fardiansyah Harahap<br><i style="color: blue;" class="fab fa-linkedin">&nbsp;</i><b><a target="_blank" href="https://www.linkedin.com/in/yogaseptana/">Linkedin</a></b></div>
 </div>
 
 <div class="gallery">
-      <img src="<?php echo base_url();?>assets/img/yoga.jpg" alt="Mountains" width="600" height="400">
+      <img src="<?php echo base_url();?>assets/img/winnie.jpg" alt="Mountains" width="600" height="400">
     <div class="desc">Bayu Winnie<br><i style="color: blue;" class="fab fa-linkedin">&nbsp;</i><b><a target="_blank" href="https://www.linkedin.com/in/winnienapitupulu">Linkedin</a></b></div>
 </div>
 
 <div class="gallery">
-    <img src="<?php echo base_url();?>assets/img/yoga.jpg" alt="Mountains" width="600" height="400">
+    <img src="<?php echo base_url();?>assets/img/rina.jpg" alt="Mountains" width="600" height="400">
   <div class="desc">Rina Katrina<br><i style="color: blue;" class="fab fa-linkedin">&nbsp;</i><b><a target="_blank" href="https://www.linkedin.com/in/rina-naibah">Linkedin</a></b></div>
 </div>
 
 <div class="gallery">
-    <img src="<?php echo base_url();?>assets/img/yoga.jpg" alt="Mountains" width="600" height="400">
+    <img src="<?php echo base_url();?>assets/img/pahsa.jpg" alt="Mountains" width="600" height="400">
   <div class="desc">Pasha Abdul Khalid<br><i style="color: blue;" class="fab fa-linkedin">&nbsp;</i><b><a target="_blank" href="https://www.linkedin.com/in/pasha-abdul-khalid-969b80175">Linkedin</a></b></div>
 </div>
 
