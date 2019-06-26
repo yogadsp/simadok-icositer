@@ -60,6 +60,7 @@
                         <th scope="col">Status</th>
                         <th scope="col">Penginput</th>
                         <th scope="col">Dokumen</th>
+                        <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="isi_data">
@@ -76,6 +77,12 @@
                             <td><?php echo $row->status ?></td>
                             <td><?php echo $row->id_user ?></td>
                             <td><a class="btn btn-success" href="<?php echo base_url("upload/jurnal/$row->dokumen"); ?>" target="_blank"><i class="fas fa-download"></a></td>
+                            <td>
+                                <p>
+                                <a class="btn btn-primary" href="<?php echo base_url(); ?>data_jurnal/editJurnal/<?php echo $row->id_pusat; ?>" style="font-size: 0.8em; border-radius: 4px;"><i class="fas fa-edit"></i></a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                <a class="btn btn-danger" href="<?php echo base_url(); ?>data_jurnal/hapusJurnal/<?php echo $row->id_pusat; ?>" onclick="return confirm('Are you sure you want to delete?')" style="font-size: 0.8em; border-radius: 4px;" ><i class="far fa-trash-alt"></i></a></p>
+                            </td>
                         </tr>
                     <?php } ?>
                     </tbody>
@@ -83,6 +90,8 @@
             </div>
             <div class="col-md-1"></div>
         </div>
+        <br>
+        <?php $this->load->view('footer'); ?>
 
     <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.js"></script>

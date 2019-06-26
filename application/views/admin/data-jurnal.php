@@ -102,6 +102,8 @@
                 </div>
             </div>
         </div>
+        <br>
+        <?php $this->load->view('footer'); ?>
 
     <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.js"></script>

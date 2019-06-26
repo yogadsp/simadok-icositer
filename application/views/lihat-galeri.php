@@ -32,6 +32,7 @@
         </table>
 </div> -->
 <!-- mencoba galery responsive -->
+
 <center>
 
 <?php foreach($galeri->result() as $row) { ?>
@@ -49,6 +50,7 @@
         <h5><?php echo $row->keterangan ?> </h5>
     </p>
   </div>
+  
 
 </div>
 <?php } ?>
@@ -57,6 +59,7 @@
     <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo base_url();?>assets/jquery-ui/jquery-ui.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

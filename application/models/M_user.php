@@ -21,7 +21,7 @@ class M_user extends CI_model{
 
             $this->db->insert('user', $data1);
             echo "<script> alert('Data berhasil ditambah!'); </script>";
-            redirect(base_url('home/tambah_jurnal'), 'refresh');
+            redirect(base_url('data_user'), 'refresh');
 		}
 	}
 
@@ -92,6 +92,7 @@ class M_user extends CI_model{
 			//      WHERE id = $id
 			if($queryy){
 				echo '<script>alert("Data berhasil di update!");</script>';
+				redirect(base_url('data_user'), 'refresh');
 			} else {
 				echo '<script>alert("Data tidak berhasil di update!"); </script>';
 			}

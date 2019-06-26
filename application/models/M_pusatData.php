@@ -28,7 +28,7 @@ class M_pusatData extends CI_model{
                         NATURAL JOIN bidang
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
-                        NATURAL JOIN bid_subbid";
+                        NATURAL JOIN bid_subbid ORDER BY tgl_input DESC";
             $data = $this->db->query($query);
             
             return $data;
@@ -44,7 +44,7 @@ class M_pusatData extends CI_model{
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        WHERE bidang.nama_bidang='JSAT'";
+                        WHERE bidang.nama_bidang='JSAT' ORDER BY tgl_input DESC";
             $data = $this->db->query($query);
             
             return $data;
@@ -58,7 +58,7 @@ class M_pusatData extends CI_model{
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        WHERE bidang.nama_bidang='IOP'";
+                        WHERE bidang.nama_bidang='IOP' ORDER BY tgl_input DESC";
             $data = $this->db->query($query);
             
             return $data;
@@ -72,7 +72,7 @@ class M_pusatData extends CI_model{
                         NATURAL JOIN sub_bidang
                         NATURAL JOIN jurnal
                         NATURAL JOIN bid_subbid
-                        WHERE bidang.nama_bidang='sbsn'";
+                        WHERE bidang.nama_bidang='sbsn' ORDER BY tgl_input DESC";
             $data = $this->db->query($query);
             
             return $data;

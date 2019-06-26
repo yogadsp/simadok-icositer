@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07 Mei 2019 pada 12.07
+-- Generation Time: 16 Mei 2019 pada 13.02
 -- Versi Server: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -59,7 +59,9 @@ CREATE TABLE `bid_subbid` (
 --
 
 INSERT INTO `bid_subbid` (`id_bid_subbid`, `id_bidang`, `id_subbidang`) VALUES
-(34, 1, 39);
+(35, 1, 40),
+(36, 11, 41),
+(37, 21, 42);
 
 -- --------------------------------------------------------
 
@@ -74,6 +76,15 @@ CREATE TABLE `galeri` (
   `gambar` varchar(50) NOT NULL,
   `id_user` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `galeri`
+--
+
+INSERT INTO `galeri` (`id_galeri`, `tgl_galeri`, `keterangan`, `gambar`, `id_user`) VALUES
+(8, '2019-05-16', 'Sambutan Rektor', '225ec09e2af337e06635ce0373b7d00d.jpg', 'yoga'),
+(9, '2019-05-23', 'Sambutan Narasumber', 'f9c323f6783ae13701d1d98b187441f7.jpg', 'yoga'),
+(10, '2019-05-09', 'Workshop Penelitian', 'd7d37f15db2745d9a8ac19937921ae07.jpg', 'yoga');
 
 -- --------------------------------------------------------
 
@@ -91,8 +102,11 @@ CREATE TABLE `jurnal` (
 --
 
 INSERT INTO `jurnal` (`id_jurnal`, `judul_jurnal`) VALUES
-(108, 'Ini Jdullllll'),
-(109, 'asd');
+(111, 'The Delay Simulation on Hierarchical Structure for Semi-Double Track of Railway Line Using Max-Plus Algebra'),
+(112, 'DFT Investigation on the Adsorption of KCl on the Surface of ZnO'),
+(113, 'Analysis of Southern Segment of Sumatran Fault Monitoring Bench Mark as Preliminary Approach in Updating Earthquake Hazard Map'),
+(114, 'CHARACTERISTICS AND MINERAL CONTENT OF LAMPUNG TENGAH IRONSANDS '),
+(115, 'wwwwwwwww');
 
 -- --------------------------------------------------------
 
@@ -138,7 +152,11 @@ CREATE TABLE `pusat_data` (
 --
 
 INSERT INTO `pusat_data` (`id_pusat`, `tgl_input`, `id_user`, `id_jurnal`, `id_bid_subbid`, `nama_penulis`, `email`, `afiliasi`, `status`, `dokumen`) VALUES
-(29, '2019-05-07', 'yoga', 109, 34, 'asdas', 'asdasd', 'as', 'asd', '36f6c809103f74b338120ed68804ac7e.pdf');
+(31, '2019-05-14', 'yoga', 111, 35, 'Tri Utomo', 'tri.utomo@ma.itera.a', 'ITERA', 'Selesai', 'd112c514646b88a2bf495819825a83ca.pdf'),
+(32, '2019-05-14', 'yoga', 112, 36, 'Listra Yehezkiel Ginting, Andam Deatama Refino, Lukman Nulhakim', 'listra.yehezkiel@tf.', 'ITERA', 'Selesai', 'c02ba0b64356930a322d59fb343c8e43.pdf'),
+(34, '2019-05-14', 'yoga', 113, 37, 'Satrio Muhammad Alif, Arliandy Pratama', 'satrio.muhammad@gt.i', 'ITERA', 'Selesai', '3eea545a3aba87920d710b82cd77220b.pdf'),
+(35, '2019-05-14', 'yoga', 114, 37, 'Deska Lismawenning Puspitarum, Gita Safitri, Harlina Ardiyanti, Mohamad Samsul Anrokhi', 'deska.lismawenning@f', 'ITERA', 'Selesai', '9efad97492b4aa3cb67bf86546995021.pdf'),
+(36, '2019-05-14', 'yoga', 115, 35, 'h', 'adi@gmail.com', 'ITERA', 'Ini Status', '09682c24bf7a27345318f8fefccbc17d.pdf');
 
 -- --------------------------------------------------------
 
@@ -156,7 +174,9 @@ CREATE TABLE `sub_bidang` (
 --
 
 INSERT INTO `sub_bidang` (`id_subbidang`, `nama_subbidang`) VALUES
-(39, 'Contoh');
+(40, 'Fundamental Science'),
+(41, 'Smart and Advanced Materials'),
+(42, '');
 
 -- --------------------------------------------------------
 
@@ -246,37 +266,37 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `bidang`
 --
 ALTER TABLE `bidang`
-  MODIFY `id_bidang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_bidang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `bid_subbid`
 --
 ALTER TABLE `bid_subbid`
-  MODIFY `id_bid_subbid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_bid_subbid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `jurnal`
 --
 ALTER TABLE `jurnal`
-  MODIFY `id_jurnal` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id_jurnal` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `pusat_data`
 --
 ALTER TABLE `pusat_data`
-  MODIFY `id_pusat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_pusat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `sub_bidang`
 --
 ALTER TABLE `sub_bidang`
-  MODIFY `id_subbidang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_subbidang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

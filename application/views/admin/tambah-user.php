@@ -17,7 +17,7 @@
       <img src="<?php echo base_url();?>assets/img/userr.png" alt="Avatar" width="150">
     </div>
     <br>
-    <form action="<?php echo base_url();?>tambah_user/tambahUser" method="post">
+    <form action="<?php echo base_url();?>data_user/tambahUser" method="post">
         <p>
             <label style="padding-right: 370px;" ><b>Username</b></label>
                 <input class="form-control col-md-4" placeholder="Username" type="text" name="id_user" id="id_user" size="100" required>
@@ -29,6 +29,7 @@
         <p>
             <label style="padding-right: 375px;"><b>Kategori</b></label>
                 <select class="form-control col-md-4" id="kat_user" name="kat_user">
+                    <option value="1">Admin</option>
                     <option value="2">Editor</option>
                     <option value="3">Penulis</option>
                 </select>

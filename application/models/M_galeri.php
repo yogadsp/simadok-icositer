@@ -10,7 +10,7 @@ class M_galeri extends CI_model{
     }
 
     public function tampilGambar(){
-        $query = "SELECT tgl_galeri, keterangan, gambar FROM galeri";
+        $query = "SELECT tgl_galeri, keterangan, gambar FROM galeri ORDER BY tgl_galeri DESC";
         $data = $this->db->query($query);
 
         return $data;
