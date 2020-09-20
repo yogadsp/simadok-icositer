@@ -14,3 +14,7 @@ International Conference on Science, Infrastructure Technology and Regional Deve
 Framework : Code Igniter, Bootstrap\
 Language : PHP, MySQL, Javascript\
 Plugin : JQuery, Datatables
+
+---
+#### Kontak
+Jika ada hal yang ditanyakan hubungi yogaseptana(at)gmail(dot)com dengan Subjek "Simadok Icositer"
